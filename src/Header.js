@@ -9,6 +9,7 @@ function Header() {
       <img
         src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
         className="header__logo"
+        alt="header"
       />
       <div className="header__search">
           <input className="header__searchInput"
