@@ -1,0 +1,192 @@
+[debug] [2022-02-23T21:52:31.971Z] ----------------------------------------------------------------------
+[debug] [2022-02-23T21:52:31.972Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve -p 5001
+[debug] [2022-02-23T21:52:31.972Z] CLI Version:   10.2.0
+[debug] [2022-02-23T21:52:31.972Z] Platform:      darwin
+[debug] [2022-02-23T21:52:31.972Z] Node Version:  v16.13.2
+[debug] [2022-02-23T21:52:31.973Z] Time:          Wed Feb 23 2022 16:52:31 GMT-0500 (Eastern Standard Time)
+[debug] [2022-02-23T21:52:31.973Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-23T21:52:32.010Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-23T21:52:32.010Z] > authorizing via signed-in user (fabriciobaeza@gmail.com)
+[debug] [2022-02-23T21:52:32.010Z] [iam] checking project clone-bb20e for permissions ["firebase.projects.get"]
+[debug] [2022-02-23T21:52:32.011Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-bb20e:testIamPermissions [none]
+[debug] [2022-02-23T21:52:32.011Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-bb20e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-02-23T21:52:32.266Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-bb20e:testIamPermissions 200
+[debug] [2022-02-23T21:52:32.266Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-bb20e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-02-23T21:52:32.268Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e [none]
+[debug] [2022-02-23T21:52:32.594Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e 200
+[debug] [2022-02-23T21:52:32.594Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e {"projectId":"clone-bb20e","projectNumber":"235682420472","displayName":"amazon-clone","name":"projects/clone-bb20e","resources":{"hostingSite":"clone-bb20e"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/Users/fabriciobaeza/Desktop/Projects/amazon-clone'...
+[info] 
+[debug] [2022-02-23T21:52:32.598Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-bb20e/sites 
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-02-23T21:52:32.612Z] defaultcredentials: writing to file /Users/fabriciobaeza/.config/firebase/fabriciobaeza_gmail_com_application_default_credentials.json
+[debug] [2022-02-23T21:52:32.613Z] Setting GAC to /Users/fabriciobaeza/.config/firebase/fabriciobaeza_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/fabriciobaeza/.config/firebase/fabriciobaeza_gmail_com_application_default_credentials.json"}}
+[debug] [2022-02-23T21:52:32.614Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/adminSdkConfig [none]
+[debug] [2022-02-23T21:52:33.007Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/adminSdkConfig 200
+[debug] [2022-02-23T21:52:33.008Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/adminSdkConfig {"projectId":"clone-bb20e","storageBucket":"clone-bb20e.appspot.com"}
+[debug] [2022-02-23T21:52:33.038Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-bb20e/sites 200
+[debug] [2022-02-23T21:52:33.038Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-bb20e/sites {"sites":[{"name":"projects/235682420472/sites/clone-bb20e","defaultUrl":"https://clone-bb20e.web.app","appId":"1:235682420472:web:1b2e80dc241dc6eeb44d0d","type":"DEFAULT_SITE"}]}
+[debug] [2022-02-23T21:52:33.038Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/webApps/1:235682420472:web:1b2e80dc241dc6eeb44d0d/config [none]
+[debug] [2022-02-23T21:52:33.618Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/webApps/1:235682420472:web:1b2e80dc241dc6eeb44d0d/config 200
+[debug] [2022-02-23T21:52:33.618Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/webApps/1:235682420472:web:1b2e80dc241dc6eeb44d0d/config {"projectId":"clone-bb20e","appId":"1:235682420472:web:1b2e80dc241dc6eeb44d0d","storageBucket":"clone-bb20e.appspot.com","apiKey":"AIzaSyBo-uQhMLev_vl2etex-dsKie9WOrbU2e4","authDomain":"clone-bb20e.firebaseapp.com","messagingSenderId":"235682420472","measurementId":"G-1T8DLDYM4T"}
+[info] i  functions: Watching "/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions\" for Cloud Functions..."}}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5001 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5001\u001b[22m\u001b[24m"}}
+[debug] [2022-02-23T21:52:33.661Z] Validating nodejs source
+[debug] [2022-02-23T21:52:34.274Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.204.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-23T21:52:34.275Z] Building nodejs source
+[debug] [2022-02-23T21:52:34.275Z] Analyzing nodejs backend spec
+[info] ✔  functions[us-central1-api]: http function initialized (http://localhost:5002/clone-bb20e/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5002/clone-bb20e/us-central1/api)."}}
+[debug] [2022-02-23T21:52:45.684Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-02-23T21:52:45.684Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-02-23T21:52:45.685Z] Accepted request GET /clone-bb20e/us-central1/api --> us-central1-api
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-02-23T21:52:45.697Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-02-23T21:52:45.699Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-02-23T21:52:45.699Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-02-23T21:52:45.699Z] [worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: Assigning socketPath: /var/folders/yk/v7rk4_qx291c_83s95c0kgjr0000gn/T/fire_emu_8155.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: Assigning socketPath: /var/folders/yk/v7rk4_qx291c_83s95c0kgjr0000gn/T/fire_emu_8155.sock"}}
+[debug] [2022-02-23T21:52:45.701Z] [worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: BUSY"}}
+[debug] [2022-02-23T21:52:46.156Z] [runtime-status] [8155] Functions runtime initialized. {"cwd":"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Functions runtime initialized. {\"cwd\":\"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-02-23T21:52:46.157Z] [runtime-status] [8155] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Disabled runtime features: undefined"}}
+[debug] [2022-02-23T21:52:46.157Z] [runtime-status] [8155] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-02-23T21:52:46.158Z] [runtime-status] [8155] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-02-23T21:52:46.158Z] [runtime-status] [8155] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-02-23T21:52:46.158Z] [runtime-status] [8155] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-02-23T21:52:46.175Z] [runtime-status] [8155] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-02-23T21:52:46.175Z] [runtime-status] [8155] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.18.1","resolution":"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-02-23T21:52:46.176Z] [runtime-status] [8155] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-02-23T21:52:46.176Z] [runtime-status] [8155] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-02-23T21:52:46.176Z] [runtime-status] [8155] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-02-23T21:52:46.176Z] [runtime-status] [8155] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-02-23T21:52:46.228Z] [runtime-status] [8155] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"Beginning execution of \"api\""}}
+[debug] [2022-02-23T21:52:46.228Z] [runtime-status] [8155] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Running api in signature http"}}
+[debug] [2022-02-23T21:52:46.229Z] [runtime-status] [8155] Attempting to listen to socketPath: /var/folders/yk/v7rk4_qx291c_83s95c0kgjr0000gn/T/fire_emu_8155.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Attempting to listen to socketPath: /var/folders/yk/v7rk4_qx291c_83s95c0kgjr0000gn/T/fire_emu_8155.sock"}}
+[debug] [2022-02-23T21:52:46.232Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-02-23T21:52:46.232Z] [functions] Got req.url=/clone-bb20e/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-bb20e/us-central1/api, mapping to path=/"}}
+[debug] [2022-02-23T21:52:46.235Z] [runtime-status] [8155] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Ephemeral server handling GET request"}}
+[debug] [2022-02-23T21:52:46.238Z] [runtime-status] [8155] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-02-23T21:52:46.238Z] [worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: IDLE"}}
+[debug] [2022-02-23T21:52:46.238Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-02-23T21:52:46.297Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2022-02-23T21:53:16.228Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-02-23T21:53:16.229Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-02-23T21:53:16.229Z] Accepted request GET /clone-bb20e/us-central1/api --> us-central1-api
+[debug] [2022-02-23T21:53:16.229Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-02-23T21:53:16.229Z] [worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: Assigning socketPath: /var/folders/yk/v7rk4_qx291c_83s95c0kgjr0000gn/T/fire_emu_8155.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: Assigning socketPath: /var/folders/yk/v7rk4_qx291c_83s95c0kgjr0000gn/T/fire_emu_8155.sock"}}
+[debug] [2022-02-23T21:53:16.229Z] [worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: BUSY"}}
+[debug] [2022-02-23T21:53:16.231Z] [runtime-status] [8155] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"Beginning execution of \"api\""}}
+[debug] [2022-02-23T21:53:16.231Z] [runtime-status] [8155] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Running api in signature http"}}
+[debug] [2022-02-23T21:53:16.232Z] [runtime-status] [8155] Attempting to listen to socketPath: /var/folders/yk/v7rk4_qx291c_83s95c0kgjr0000gn/T/fire_emu_8155.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Attempting to listen to socketPath: /var/folders/yk/v7rk4_qx291c_83s95c0kgjr0000gn/T/fire_emu_8155.sock"}}
+[debug] [2022-02-23T21:53:16.234Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-02-23T21:53:16.235Z] [functions] Got req.url=/clone-bb20e/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-bb20e/us-central1/api, mapping to path=/"}}
+[debug] [2022-02-23T21:53:16.237Z] [runtime-status] [8155] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Ephemeral server handling GET request"}}
+[debug] [2022-02-23T21:53:16.239Z] [runtime-status] [8155] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [8155] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-02-23T21:53:16.239Z] [worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: IDLE"}}
+[debug] [2022-02-23T21:53:16.240Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-02-23T21:53:45.363Z] File /Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-23T21:53:46.365Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-02-23T21:53:46.366Z] [worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: FINISHING"}}
+[debug] [2022-02-23T21:53:46.367Z] Validating nodejs source
+[debug] [2022-02-23T21:53:46.975Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.204.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-23T21:53:46.976Z] Building nodejs source
+[debug] [2022-02-23T21:53:46.976Z] Analyzing nodejs backend spec
+[debug] [2022-02-23T21:53:46.979Z] File /Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-23T21:53:46.980Z] [worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: exited"}}
+[debug] [2022-02-23T21:53:46.980Z] [worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8edaae1-be74-4dea-bad4-8238d0200190]: FINISHED"}}
+[debug] [2022-02-23T21:53:47.983Z] Validating nodejs source
+[debug] [2022-02-23T21:53:48.555Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.204.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-23T21:53:48.555Z] Building nodejs source
+[debug] [2022-02-23T21:53:48.555Z] Analyzing nodejs backend spec
