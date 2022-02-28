@@ -12,7 +12,7 @@ import { db } from "./firebase";
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
   const navigate = useNavigate();
-  const stripe = useStripe();
+  const stripe = useStripe(); 
   const elements = useElements();
 
   const [succeeded, setSucceeded] = useState(false);
@@ -33,6 +33,8 @@ function Payment() {
   }, [basket]);
 
   console.log("The secret is >>>", clientSecret);
+  console.log("Person", user)
+  
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -46,7 +48,7 @@ function Payment() {
       })
       .then(({ paymentIntent }) => {
         db.collection("users")
-          .doc(user?.id)
+          .doc(user?.uid)
           .collection("orders")
           .doc(paymentIntent.id)
           .set({
@@ -63,8 +65,10 @@ function Payment() {
           type: "EMPTY_BASKET",
         });
 
-        navigate.replace("/orders");
+        navigate("/orders");
       });
+      console.log("Payload >>>",payload)
+      
   };
 
   const handleChange = (event) => {
