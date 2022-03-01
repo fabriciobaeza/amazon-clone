@@ -1,0 +1,77 @@
+[debug] [2022-03-01T03:21:40.651Z] ----------------------------------------------------------------------
+[debug] [2022-03-01T03:21:40.652Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve -p 5001
+[debug] [2022-03-01T03:21:40.652Z] CLI Version:   10.2.0
+[debug] [2022-03-01T03:21:40.652Z] Platform:      darwin
+[debug] [2022-03-01T03:21:40.652Z] Node Version:  v16.13.2
+[debug] [2022-03-01T03:21:40.654Z] Time:          Mon Feb 28 2022 22:21:40 GMT-0500 (Eastern Standard Time)
+[debug] [2022-03-01T03:21:40.654Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-01T03:21:40.655Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-03-01T03:21:40.697Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-01T03:21:40.697Z] > authorizing via signed-in user (fabriciobaeza@gmail.com)
+[debug] [2022-03-01T03:21:40.697Z] [iam] checking project clone-bb20e for permissions ["firebase.projects.get"]
+[debug] [2022-03-01T03:21:40.697Z] > refreshing access token with scopes: []
+[debug] [2022-03-01T03:21:40.698Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-01T03:21:40.848Z] <<< HTTP RESPONSE 200 {"date":"Tue, 01 Mar 2022 03:21:40 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-01T03:21:40.892Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-bb20e:testIamPermissions [none]
+[debug] [2022-03-01T03:21:40.893Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-bb20e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-03-01T03:21:40.898Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-03-01T03:21:40.898Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-03-01T03:21:41.165Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-bb20e:testIamPermissions 200
+[debug] [2022-03-01T03:21:41.165Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-bb20e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-03-01T03:21:41.167Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e [none]
+[debug] [2022-03-01T03:21:41.487Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e 200
+[debug] [2022-03-01T03:21:41.488Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e {"projectId":"clone-bb20e","projectNumber":"235682420472","displayName":"amazon-clone","name":"projects/clone-bb20e","resources":{"hostingSite":"clone-bb20e","storageBucket":"clone-bb20e.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/Users/fabriciobaeza/Desktop/Projects/amazon-clone'...
+[info] 
+[debug] [2022-03-01T03:21:41.492Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-bb20e/sites 
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-03-01T03:21:41.505Z] defaultcredentials: writing to file /Users/fabriciobaeza/.config/firebase/fabriciobaeza_gmail_com_application_default_credentials.json
+[debug] [2022-03-01T03:21:41.507Z] Setting GAC to /Users/fabriciobaeza/.config/firebase/fabriciobaeza_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/fabriciobaeza/.config/firebase/fabriciobaeza_gmail_com_application_default_credentials.json"}}
+[debug] [2022-03-01T03:21:41.508Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/adminSdkConfig [none]
+[debug] [2022-03-01T03:21:41.896Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-bb20e/sites 200
+[debug] [2022-03-01T03:21:41.896Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-bb20e/sites {"sites":[{"name":"projects/235682420472/sites/clone-bb20e","defaultUrl":"https://clone-bb20e.web.app","appId":"1:235682420472:web:1b2e80dc241dc6eeb44d0d","type":"DEFAULT_SITE"}]}
+[debug] [2022-03-01T03:21:41.896Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/webApps/1:235682420472:web:1b2e80dc241dc6eeb44d0d/config [none]
+[debug] [2022-03-01T03:21:41.897Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/adminSdkConfig 200
+[debug] [2022-03-01T03:21:41.897Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/adminSdkConfig {"projectId":"clone-bb20e","storageBucket":"clone-bb20e.appspot.com","locationId":"us-central"}
+[debug] [2022-03-01T03:21:42.403Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/webApps/1:235682420472:web:1b2e80dc241dc6eeb44d0d/config 200
+[debug] [2022-03-01T03:21:42.403Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-bb20e/webApps/1:235682420472:web:1b2e80dc241dc6eeb44d0d/config {"projectId":"clone-bb20e","appId":"1:235682420472:web:1b2e80dc241dc6eeb44d0d","storageBucket":"clone-bb20e.appspot.com","locationId":"us-central","apiKey":"AIzaSyBo-uQhMLev_vl2etex-dsKie9WOrbU2e4","authDomain":"clone-bb20e.firebaseapp.com","messagingSenderId":"235682420472","measurementId":"G-1T8DLDYM4T"}
+[info] i  functions: Watching "/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/fabriciobaeza/Desktop/Projects/amazon-clone/functions\" for Cloud Functions..."}}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5001 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5001\u001b[22m\u001b[24m"}}
+[debug] [2022-03-01T03:21:42.439Z] Validating nodejs source
+[debug] [2022-03-01T03:21:43.059Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.204.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-03-01T03:21:43.059Z] Building nodejs source
+[debug] [2022-03-01T03:21:43.059Z] Analyzing nodejs backend spec
+[info] ✔  functions[us-central1-api]: http function initialized (http://localhost:5002/clone-bb20e/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5002/clone-bb20e/us-central1/api)."}}
